@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Smooch Sans';
+    src: url(../fonts/Smooch_sans/SmoochSans-VariableFont_wght.ttf);
+}
+
+
+.container_Apresentação {
+    height: 70vh;
+    padding: 50px;
+    border-bottom: 4px solid #b3977f;
+
+    background-image: url("../images/container_apresentação_bk.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+    .container_Apresentação > div{
+        max-width:50%;
+        
+    }      
+
+        .container_Apresentação > div > h1 {
+            font-size: 65px;
+            font-family: 'Smooch Sans';
+            font-weight: 471;
+
+            color: #b3977f;
+        }
+        @media (max-width: 1100px) {
+            .container_Apresentação > div > h1 {
+                font-size: 50px;
+            }
+        }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 40px;
+
+    height: 95vh;
+    padding: 40px;
+
+}
+    .container > article {
+        background-color: whitesmoke;
+        padding: 17px;
+        border-radius: 15px;
+
+        font-family: 'Smooch Sans', Arial, Helvetica, sans-serif;
+    }
+    .projetos {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }

@@ -1,0 +1,136 @@
+/*variaveis*/
+:root {
+    /*paleta de cores*/
+    --marrom-claro: #b3977f;
+    --laranja-claro: rgb(255, 203, 144);
+    --laranja: rgb(255, 153, 36);
+    --cinza: rgb(133, 133, 133);
+}
+/*imports*/
+@font-face {
+    font-family: 'Smooch Sans';
+    src: url(assets/fonts/Smooch_sans/SmoochSans-VariableFont_wght.ttf);
+}
+
+/*resets*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    flex-direction:column;
+    margin: 0px;
+    list-style: none;
+
+    overflow-x: hidden;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+}
+p, h5 , h1{
+    margin: 0px;
+}
+/*Cabeçalho*/
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: black;
+    color: white;
+}
+    #header > .Logo {
+        display: flex;
+        height: 80%;
+        width: auto;
+
+        align-items: center;
+
+    }
+        #header > .Logo > img {
+            height: 100%;
+            width: auto;
+        }
+        #header > .Logo > h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    #header > .Menu {
+        display: flex;
+
+        max-height: 100%;
+        align-items: center
+    }
+        #header > .Menu > li {
+            margin: 0px 5px;
+            max-height: 100%;
+            max-width: 100px;
+
+            font-family: 'Smooch sans', Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+            #header > .Menu > li > a {
+                height: 100%;
+                width: 100%;
+                color: white;
+            }
+            #header > .Menu > li > a:hover {
+                color: var(--cinza);
+            }
+
+/*Rodapé*/
+footer {
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px;
+    border-top: 4px solid var(--marrom-claro);
+
+    font-family: 'Smooch Sans', Arial, Helvetica, sans-serif;
+
+    background-color: black;
+    color: white;
+}
+    footer > div {
+        max-width: 50%;
+    }
+        footer > div > ul > li > p {
+            font-weight: 500;
+            font-size: 20px;
+        }
+            footer > div > ul > li > p > a {
+                color: var(--laranja-claro);
+            }
+            footer > div > ul > li > p > a:hover {
+                color: var(--laranja);
+            }
+    footer > div > h5 {
+        margin: 20px 0px;
+        font-size: 30px;
+    }
+        footer > #sobre_mim > p {
+            font-size: 20px;
+        }
+    footer > p {
+        text-align: center;
+        font-family: 'Smooch sans', 'sans-serif', 'Helvetica','Arial' ;
+        font-size: 1em;
+        margin: 100px 0px 20px 0px;
+    }
