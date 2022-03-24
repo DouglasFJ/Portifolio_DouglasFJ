@@ -5,6 +5,7 @@
     --laranja-claro: rgb(255, 203, 144);
     --laranja: rgb(255, 153, 36);
     --cinza: rgb(133, 133, 133);
+    --cinza-claro: rgb(214, 214, 214);
 }
 /*imports*/
 @font-face {
@@ -56,7 +57,7 @@ p, h5 , h1{
     background-color: black;
     color: white;
 }
-    #header > .Logo {
+    .Logo {
         display: flex;
         height: 80%;
         width: auto;
@@ -64,21 +65,21 @@ p, h5 , h1{
         align-items: center;
 
     }
-        #header > .Logo > img {
+        .Logo > img {
             height: 100%;
             width: auto;
         }
-        #header > .Logo > h1 {
+        .Logo > h1 {
             font-family: Arial, Helvetica, sans-serif;
         }
 
-    #header > .Menu {
+    .Menu {
         display: flex;
 
         max-height: 100%;
         align-items: center
     }
-        #header > .Menu > li {
+        .Menu > li {
             margin: 0px 5px;
             max-height: 100%;
             max-width: 100px;
@@ -86,14 +87,15 @@ p, h5 , h1{
             font-family: 'Smooch sans', Arial, Helvetica, sans-serif;
             font-size: 20px;
         }
-            #header > .Menu > li > a {
+            .Menu > li > a {
                 height: 100%;
                 width: 100%;
                 color: white;
             }
-            #header > .Menu > li > a:hover {
+            .Menu > li > a:hover {
                 color: var(--cinza);
             }
+    
 
 /*Rodapé*/
 footer {
@@ -134,3 +136,17 @@ footer {
         font-size: 1em;
         margin: 100px 0px 20px 0px;
     }
+
+@media (max-width: 540px) {
+    .Menu {
+        flex-direction: column;
+    }
+    .Logo > img {
+        height: 70%;
+        width: auto;
+    }
+
+    footer > div {
+        max-width: none;
+    }
+}
