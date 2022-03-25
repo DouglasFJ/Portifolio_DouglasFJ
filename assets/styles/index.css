@@ -87,6 +87,14 @@
 
                 background-color: var(--cinza-claro);
             }
+                .projetos > div > div > a {
+                    margin-bottom: 4px;
+                    font-weight: 700;
+                    color: var(--marrom-claro);
+                } 
+                .projetos > div > div > a:hover {
+                    color: #775d46;
+                } 
 
         .Estudos  ul {
             list-style-type: square;
