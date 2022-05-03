@@ -22,11 +22,6 @@ html{
     scroll-behavior: smooth;
 }
 body {
-    display: flex;
-    flex-direction:column;
-    margin: 0px;
-    list-style: none;
-
     overflow-x: hidden;
 }
 ul {
@@ -38,9 +33,6 @@ a {
     color: black;
     font-style: normal;
     text-decoration: none;
-}
-p, h5 , h1{
-    margin: 0px;
 }
 /*Cabeçalho*/
 #header {

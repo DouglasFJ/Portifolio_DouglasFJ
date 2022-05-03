@@ -95,7 +95,12 @@
                 .projetos > div > div > a:hover {
                     color: #775d46;
                 } 
-
+        .Estudos {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
         .Estudos  ul {
             list-style-type: square;
             margin-left: 1em;
